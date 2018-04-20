@@ -1,21 +1,43 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import iceCapp from './assets/iceCapp-logo.png';
 import './App.css';
+
+import Home from './container/Home';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className="navBar">
+          <div className="iceCapp">
+            <img className="iceCappLogo" src={iceCapp} alt="IceCapps Logo" id="app-header-logo" />
+          </div>
+          <div className="title">
+            <h1><a href='/'>IceCapps</a></h1>
+          </div>
+          <div className="info">
+            <p className="About"><a href='/about'>About Us</a></p>
+            <p className="WhatWeDo"><a href='/what-we-do'>What We Do</a></p>
+          </div>
+          {/* <div className='auth-button-container'>
+            <p className='auth-button'><a href='/login'>Login</a></p>
+            <p className='auth-button'><a href='/sign-up'>Sign Up</a></p>
+          </div> */}
+        </div>
+        <Router>
+          <Switch >
+            <Route
+              exact={true} path='/'
+              component={Home}
+            />
+          </Switch>
+        </Router>
       </div>
     );
   }
+
 }
 
 export default App;
