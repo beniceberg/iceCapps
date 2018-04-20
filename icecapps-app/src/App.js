@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import iceCapp from './assets/iceCapp-logo.png';
 import './App.css';
 
-import Home from './container/Home';
+import Landing from './container/Landing';
 
 class App extends Component {
   render() {
@@ -30,7 +30,7 @@ class App extends Component {
           <Switch >
             <Route
               exact={true} path='/'
-              component={Home}
+              component={Landing}
             />
           </Switch>
         </Router>
