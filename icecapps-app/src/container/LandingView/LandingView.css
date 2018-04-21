@@ -1,0 +1,11 @@
+
+.Landing {
+  background-image: url('../../assets/landing-background.jpg');
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: -1;
+  margin-top: -96px;
+  padding-top: 106px;
+}

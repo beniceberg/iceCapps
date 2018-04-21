@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import iceCapp from './assets/iceCapp-logo.png';
 import './App.css';
 
-import Landing from './container/Landing';
+import Landing from './container/LandingView';
 
 class App extends Component {
   render() {
