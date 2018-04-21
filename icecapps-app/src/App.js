@@ -17,10 +17,12 @@ class App extends Component {
           <div className="title">
             <h1><a href='/'>IceCapps</a></h1>
           </div>
-          <div className="info">
-            <p className="About"><a href='/about'>About Us</a></p>
-            <p className="WhatWeDo"><a href='/what-we-do'>What We Do</a></p>
-          </div>
+          <ul className="info">
+            <li className="nav-item"><a href='/company'>Company</a></li>
+            <li className="nav-item"><a href='/services'>Services</a></li>
+            <li className="nav-item"><a href='/technologies'>Technologies</a></li>
+            <li className="nav-item"><a href='/portfolio'>Portfolio</a></li>
+          </ul>
           {/* <div className='auth-button-container'>
             <p className='auth-button'><a href='/login'>Login</a></p>
             <p className='auth-button'><a href='/sign-up'>Sign Up</a></p>
